@@ -38,7 +38,7 @@ function loadJsFromGithub(path, exclusions) {
 
 function getLatestUrl(account, repo) {
 	
-	var url = "https://sedoo.aeris-data.fr/aeris-rest-services/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
+	var url = "http://sedoo.aeris-data.fr/aeris-rest-services/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
 	var request = new XMLHttpRequest();
 	request.open('GET', url, true);
 
@@ -70,7 +70,7 @@ function getLatestUrl(account, repo) {
 
 function getLatestUrlFromBackup(account, repo) {
 	
-	var url = "https://sedoo.aeris-data.fr/aeris-rest-services-backup/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
+	var url = "http://sedoo.aeris-data.fr/aeris-rest-services-backup/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
 	var request = new XMLHttpRequest();
 	request.open('GET', url, true);
 
@@ -101,7 +101,7 @@ function getLatestUrlFromBackup(account, repo) {
 
 
 function getVersionUrl(account, repo,version) {
-	var url = "https://sedoo.aeris-data.fr/aeris-rest-services/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
+	var url = "http://sedoo.aeris-data.fr/aeris-rest-services/rest/jsloading/versions?component="+repo+"&fakeparam="+Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 10)
 	var request = new XMLHttpRequest();
 	request.open('GET', url, true);
 
